@@ -1,0 +1,52 @@
+@import '../Context/variables.scss';
+
+.TopCComponent{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 70% 30%;
+    &-logo{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        &-img{
+            width: 90%;
+            height: 90%;
+            max-height: 100px;
+        }
+    }
+    &-info{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+
+        &-name{
+            & p{
+                color: $text-primary-color;
+                font-weight: bold;
+                font-size: 1.8rem;
+            }
+        }
+        &-user{
+            & p{
+                color: $text-primary-color;
+                font-size: 1rem;        
+            }
+        }
+        &-join{
+            & p{
+                color: $text-tertiary-color;
+                font-size: 1rem;        
+            }
+        }
+    }
+    &-bio{
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        & p{
+            color: $text-primary-color;
+            font-weight: 400;
+        }
+    }
+}
