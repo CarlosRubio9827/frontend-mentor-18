@@ -1,0 +1,19 @@
+
+html{
+    --primary-color: #294B6B;
+    --secundary-color: #0F6FFF;
+    --tertiary-color: #17213A;
+    --text-primary-color: #fff;
+    --text-secundary-color: #A4A0A0;
+    --text-tertiary-color: #087DE9;
+}
+
+html[data-theme="dark"] {
+    --primary-color: red;
+    --secundary-color: blue;
+    --tertiary-color: green;
+    --text-primary-color: yellow;
+    --text-secundary-color: black;
+    --text-tertiary-color: brown;
+}
+

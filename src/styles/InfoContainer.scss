@@ -1,0 +1,36 @@
+@import './variables.scss';
+
+
+.infoContainer{
+    
+    width: 100%;
+    height: 90%;
+    padding: 15px;
+    background: var(--primary-color);
+    border-radius: 10px;
+    margin-top: 15px;
+    &-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    &-noSearchComponent{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-notFoundUser{
+        text-align: center;
+        position: relative;
+        top: 50%;
+        font-size: 2rem;
+        transform: translateY(-80%);
+        color: #fff;
+        font-weight: 700;
+    }
+}

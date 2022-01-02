@@ -1,4 +1,4 @@
-@import '../Context/variables.scss';
+@import './variables.scss';
 
 .BottomCComponent{
     width: 100%;
@@ -20,12 +20,12 @@
             align-items: center;
             justify-content: flex-start;
             &-icon{
-                color: $text-primary-color;
+                color: var(--text-primary-color);
             }
             & p{
                 font-weight: 400;
                 margin-left: 10px;
-                color: $text-primary-color;
+                color: var(--text-primary-color);
             }
         }
     }

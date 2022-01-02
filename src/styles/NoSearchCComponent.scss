@@ -1,0 +1,21 @@
+@import './variables.scss';
+
+
+.NoSearchCComponent{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &-img{
+        width: 80px;
+        height: 80px;
+        color: var(--text-primary-color);
+    }
+    &-title{
+        font-size: 2rem;
+        color: var(--text-primary-color);
+        text-align: center;
+    }
+}
