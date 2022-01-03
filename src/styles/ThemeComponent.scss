@@ -35,7 +35,7 @@
         text-indent: -9999px;
         width: 50px;
         height: 20px;
-        background: grey;
+        background: #DAE1F4;
         display: block;
         border-radius: 100px;
         position: relative;
@@ -48,18 +48,20 @@
         left: 5px;
         width:15px;
         height: 15px;
-        background: #fff;
+        background: #17213A;
         border-radius: 90px;
         transition: 0.3s;
+        
     }
     
     input:checked + label {
-        background: #bada55;
+        background: #17213A;
     }
     
     input:checked + label:after {
         left: calc(100% - 5px);
         transform: translateX(-100%);
+        background: #DAE1F4;
     }
     
     label:active:after {
