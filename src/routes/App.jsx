@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 // import { AppUI } from './AppUI'
 import Layout from '../containers/Layout';
 import Home from '../pages/Home';
@@ -12,14 +12,14 @@ function App() {
 const initialUser = useGetUser();  
   return (
     <AppContext.Provider value={initialUser}>
-        <BrowserRouter>
+        <HashRouter>
             <Layout>
                 <Routes>
                     <Route exact path="/" element={<Home />}/>
                     <Route path="*" element={<NotFound />}/>
                 </Routes>
             </Layout>
-        </BrowserRouter>
+        </HashRouter>
     </AppContext.Provider>
   );
 }
